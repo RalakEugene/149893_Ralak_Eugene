@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* the main layout of my page */
+body{
+    background-color: #FA0525;
+    color:#666;;
+}
+
+/* adding the line property in the wrapper .grey border */
+
+#wrapper{
+    width: 900px;
+    margin: 0 auto;
+    background-color: #FFBA00;
+    border-left:1px #666 dotted; 
+    border-right:1px #666 dotted; 
+}
+
+#top{
+    width: 100%;
+    height: 25px;
+    background-color: #FFBA00;
+}
+
+.bdr-thin-white-bottom {
+    border-bottom: 1px solid #fff; 
+}
+
+#banner{
+    width: 100%; 
+    height: 100%;
+}
+
+#subbanner{
+    width: 100%; 
+    height: 250px;
+    padding-bottom: 300px;
+    background-image: url(./images/desktop.jpeg);
+    animation: slide 15s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide{
+    25%{
+        background: url(./images/desktop2.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    50%{
+        background: url(./images/bat.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    75%{
+        background: url(./images/rob.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+#topnav ul {
+    width:100%; 
+    background-color: #FFBA00;
+    float:left; 
+}
+
+#topnav ul li {
+    display: inline;
+    float: left;
+}
+
+#topnav ul li i{
+    padding-right: 10px;
+}
+
+#topnav ul a {
+    padding:10px 30px;
+    color: #666;
+    float: left;
+    font-size: 16px; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#topnav a:hover{
+    background-color: #FA0525;
+    color: #fff;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+#content{
+    padding: 30px; 
+    background-color:#0D0D0D;
+}
+
+.button {
+    color: white;
+    background: #00966b;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #FA0525;
+    transition: all 0.3s;
+}
+
+/* setting properties for the images ...apply the border all the way round */
+#content img {
+    padding:8px; 
+    margin:16px; 
+    border:1px dotted #666;
+}
+
+#content h1 {
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-bottom:1em;
+    margin-top: 1em;
+}
+
+#content h2 {
+    font-size: 25px; 
+    font-weight: bold; 
+    margin-bottom: 1em; 
+}
+
+#content p {
+    font-size: 12px; 
+    line-height: 140%; 
+    margin-bottom: .75em;
+}
+
+/*table formatting ......... */
+/* put top and bottom margin and center the table on the page ...Space out the individual cells:*/
+table {
+    width:500px; 
+    margin:20px auto; 
+    border:1px dotted #999;
+}
+
+th {
+    font-weight:bold; 
+}
+
+/* Center the content */
+th, td { 
+    padding: 8px; 
+    text-align: center; 
+    font-size: 12px; 
+}
+
+thead, tfoot {
+    background-color: #FA0525;
+}
+
+/* specifically apply to rows */
+tbody tr:hover {
+    background-color: #FFBA00;
+}
+
+#footer{
+    background-color: #FFBA00; 
+    width:100%; 
+    height:25px; 
+    padding:5px 0; 
+}
+
+/*Set the footer text: ... create a class style for the text ..*/
+.footer-text{
+    padding: 5px;
+    text-align: center; 
+    color:#fff;
+    font-weight: bold; 
+}
+
